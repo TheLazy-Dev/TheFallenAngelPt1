@@ -3,6 +3,7 @@ package com.denish.thefallenangelpt1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -25,7 +26,7 @@ public class Main2Activity extends AppCompatActivity {
         actionBar.hide();
         RelativeLayout c = findViewById(R.id.ccl);
         c.setBackground(ContextCompat.getDrawable(getBaseContext(), R.mipmap.stars_foreground));
-        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         tv = findViewById(R.id.textView);
         bt1 = findViewById(R.id.button);
         bt2 = findViewById(R.id.button2);
